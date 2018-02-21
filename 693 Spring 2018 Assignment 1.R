@@ -7,5 +7,14 @@ library(tidyverse)
 library(nycflights13)
 
 ## dataset for assignment
-flights
+flights=flights
 
+
+
+#a
+flights %>% 
+  filter(arr_delay>=120)
+
+#b
+flights %>% 
+  filter(dest=="IAH"|dest=="HOU")
