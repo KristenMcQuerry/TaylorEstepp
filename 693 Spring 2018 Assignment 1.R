@@ -17,4 +17,41 @@ flights %>%
 
 #b
 flights %>% 
-  filter(dest=="IAH"|dest=="HOU")
+  filter(dest==c("IAH","HOU"))
+
+#c
+flights %>% 
+  filter(carrier=="UA"|carrier=="AA"|carrier=="DL")
+
+#d
+flights %>% 
+  filter(month=="7"|month=="8"|month=="9")
+
+#e
+flights %>% 
+  filter(arr_delay>=120) %>% 
+  filter(dep_delay<=0)
+
+#f
+flights %>% 
+  filter(dep_delay>=60) %>% 
+  filter(dep_delay-arr_delay>30)
+
+#g
+flights %>% 
+  filter(dep_time<=600)
+
+#h
+flights %>% 
+  arrange(dep_delay)
+flights %>% 
+  arrange(desc(dep_delay))
+
+#i
+flights %>% 
+  arrange(air_time/distance)
+  
+#j
+  
+  
+  
