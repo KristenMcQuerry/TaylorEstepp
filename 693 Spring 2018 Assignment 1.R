@@ -53,11 +53,6 @@ flights %>%
   
 #j
 flights %>% 
-  arrange(desc(air_time))
-flights %>% 
-  arrange(air_time)
-
-flights %>% 
   arrange(desc(distance))
 flights %>% 
   arrange(distance)
